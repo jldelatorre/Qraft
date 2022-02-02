@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
     double valor = 250;
     double valorReposicion = 50;
 
-    final activo = Activo( area: area, codigo: codigo, descripcion: descripcion, valor: valor, valorReposicion: valorReposicion);
+    final activo = Activo( id: 1, area_local: area, codigo: codigo, descripcion: descripcion, valor: valor, valorReposicion: valorReposicion);
     DBProvider.db.nuevoActivo(activo);
     Get.to(List());
 
